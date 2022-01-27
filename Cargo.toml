@@ -1,0 +1,11 @@
+[package]
+name = "redirector"
+version = "0.1.0"
+edition = "2021"
+description = "Simple no-config Rust utility for redirecting between domains"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+hyper = { version = "0.14", features = ["http1", "http2", "server", "runtime"] }
+clap = { version = "3", features = ["derive"] }
+anyhow = "1"
